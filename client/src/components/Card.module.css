@@ -1,0 +1,32 @@
+.divCard{
+    border-radius: 30px;
+    border-color: black;
+    box-shadow: 0 0 10px 5px rgb(90, 89, 89);
+    color: rgb(39, 38, 41);    
+    background-color: white;
+    border: 1px solid rgba(136, 101, 206, 0);
+    margin-top: 20px;
+    transform:    
+    scale(1)
+    rotateX(10deg);   
+    transition: 0.6s ease all;
+    max-width: 250px;
+    height: 350px;
+}
+
+.imgFlag{
+    width: 250px;
+    height: 180px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: solid 0.1px black;
+}
+
+.divCard:hover{
+    transform:
+    perspective(800px)
+    rotateY(-15deg)
+    translateY(-50px)    
+    rotateX(10deg)
+    scale(1);       
+}

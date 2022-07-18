@@ -1,0 +1,31 @@
+.btnPage {
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: arial;
+    background: linear-gradient(to bottom, #F4F2F2, #B4B4B4);
+    border: solid #F0EEEE 1px;
+    border-radius: 53px;
+    padding:6.9px;
+    text-shadow: 0px 1px 2px #000000;
+    box-shadow: 0px 1px 5px #0D2444;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+.btnPage:hover{
+    opacity: 0.9;
+    background: linear-gradient(to bottom, #B4B4B4, #F4F2F2);
+    box-shadow: 0px 1px 2px #000000;
+    animation: pulsate 1s ease-in-out;
+    color: #fff;
+    transition: .5s ease;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+}

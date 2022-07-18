@@ -1,0 +1,14 @@
+body {
+    background-image: url(../src/assets/background_map.jpg);
+    /* background-size: cover;
+    background-repeat: repeat; */
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }

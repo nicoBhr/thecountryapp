@@ -1,0 +1,65 @@
+.containerDetails {
+    color: white; 
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    font-size: medium;
+    border-radius: 10px;
+    backdrop-filter: blur(9px);
+    background-color: rgba(55,0,255, 0.267);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255,255,255,0.4) solid;
+    border-bottom: 1px rgba(40,40,40,0.35) solid;
+    border-right: 1px rgba(40,40,40,0.35) solid;
+}
+
+.imgFlag {
+    margin: 10px;
+    min-width: 40vh;
+    min-height: 40vh;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: solid 0.1px black;
+}
+
+.imgFlag:hover {
+    animation: pulsate 1s ease-in-out;
+    color: #fff;
+    transition: .5s ease;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+}
+
+.returnBtn {
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: arial;
+    background: linear-gradient(to bottom, #F4F2F2, #B4B4B4);
+    border: solid #F0EEEE 1px;
+    border-radius: 53px;
+    padding:6.9px;
+    text-shadow: 0px 1px 2px #000000;
+    box-shadow: 0px 1px 5px #0D2444;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.returnBtn:hover{
+    opacity: 0.9;
+    background: linear-gradient(to bottom, #B4B4B4, #F4F2F2);
+    box-shadow: 0px 1px 2px #000000;
+    animation: pulsate 1s ease-in-out;
+    color: #fff;
+    transition: .5s ease;
+}
