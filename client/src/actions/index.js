@@ -4,7 +4,7 @@ import axios from 'axios';
 export function getCountries(){
     return async function(distpach){
     try {
-        const countriesJson = await axios.get("http://localhost:3001/countries");
+        const countriesJson = await axios.get("/countries");
         return distpach({
             type: 'GET_COUNTRIES',
             payload: countriesJson.data
@@ -20,7 +20,7 @@ export function getCountries(){
 export function getNameCountries(name){
     return async function(distpach){
     try {
-        const countriesJson = await axios.get("http://localhost:3001/countries?name=" + name);
+        const countriesJson = await axios.get("/countries?name=" + name);
         return distpach({
             type: 'GET_NAME_COUNTRIES',
             payload: countriesJson.data
@@ -59,7 +59,7 @@ export function populationOrder(payload){
 
 export function postActivity(payload){
     return async function(distpach){
-        const newActivity = await axios.post("http://localhost:3001/activity", payload);
+        const newActivity = await axios.post("/activity", payload);
         return newActivity;
     }
 }
@@ -67,7 +67,7 @@ export function postActivity(payload){
 export function getDetailsCountry(id){
     return async function(distpach){
     try {
-        const countryIdJson = await axios.get(`http://localhost:3001/countries/${id}`);
+        const countryIdJson = await axios.get(`/countries/${id}`);
         return distpach({
             type: 'GET_DETAILS_COUNTRY',
             payload: countryIdJson.data
@@ -82,7 +82,7 @@ export function getDetailsCountry(id){
 export function getActivities(){
     return async function(distpach){
     try {
-        const activitiesJson = await axios.get("http://localhost:3001/activity");
+        const activitiesJson = await axios.get("/activity");
         return distpach({
             type: 'GET_ACTIVITIES',
             payload: activitiesJson.data
